@@ -1,3 +1,11 @@
+//** EL2008 Praktikum Pemecahan Masalah dengan Pemrograman 2024/2025
+//* Modul : 03 - SRUCTURES
+//* Hari dan Tanggal : Senin, 27 April 2026
+//* Nama (NIM) : Hasan Al Mutawakkil (13224080)
+//* Nama File : PMP_03.c
+//* Deskripsi : Melakukan SORTING sensor badai dinamis
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
