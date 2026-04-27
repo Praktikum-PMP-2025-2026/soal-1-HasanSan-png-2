@@ -27,6 +27,7 @@ int main() {
     
     if (length > 0) {
         for (int i = 0; i < length - 1; i++) {
+
             for (int j = i + 1; j < length; j++) {
                 if (temp[j] < temp[i]) {
                     int temp3 = temp[i];
@@ -37,7 +38,6 @@ int main() {
         }
         
         printf("COUNT %d", length);
-        
         printf(" SORTED");
         for (int i = 0; i < length; i++) {
             printf(" %d", temp[i]);
@@ -47,18 +47,25 @@ int main() {
         if (length % 2 != 0) {
             printf(" MEDIAN %d", temp[length / 2]);
         } else {
-            int mid1 = temp[(length / 2) - 1];
-            int mid2 = temp[length / 2];
-            int sum = mid1 + mid2;
+            int median = temp[(length / 2) - 1];
+            int median2 = temp[length / 2];
+            int tot = median + median2;
             
-            if (sum % 2 != 0) {
-                printf("MEDIAN %.2f", sum / 2.0);
+            if (tot % 2 != 0) {
+                
+                printf(" MEDIAN %.2f", tot / 2.0);
             } else {
-                printf("MEDIAN %d", sum / 2);
+
+                printf(" MEDIAN %d", tot / 2);
             }
+
+
         }
     }
     
+
+
+
     free(temp);
     
     return 0;
