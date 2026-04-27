@@ -46,11 +46,12 @@ int main() {
         if (length % 2 != 0) {
             printf(" MEDIAN %d", temp[length / 2]);
         } else {
-            int median = temp[(length / 2) - 1];
-            int median2 = temp[length / 2];
-            int tot = median + median2;
+            float median, median2,tot;
+            median = temp[(length / 2) - 1];
+            median2 = temp[length / 2];
+            tot = median + median2;
             
-            if (tot % 2 != 0) {
+            if (length % 2 != 0) {
                 printf(" MEDIAN %.2f", tot / 2.0);
             } else {
                 printf(" MEDIAN %d", tot / 2);
