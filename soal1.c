@@ -27,7 +27,6 @@ int main() {
     
     if (length > 0) {
         for (int i = 0; i < length - 1; i++) {
-
             for (int j = i + 1; j < length; j++) {
                 if (temp[j] < temp[i]) {
                     int temp3 = temp[i];
@@ -52,11 +51,9 @@ int main() {
             int tot = median + median2;
             
             if (tot % 2 != 0) {
-                
                 printf(" MEDIAN %.2f", tot / 2.0);
             } else {
-
-                printf(" MEDIAN %d", tot / 2);
+                printf(" MEDIAN %.0f", tot / 2);
             }
 
 
