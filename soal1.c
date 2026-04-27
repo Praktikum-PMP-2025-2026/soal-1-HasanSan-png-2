@@ -53,7 +53,7 @@ int main() {
             if ((median +median2) %2 == 1) {
                 printf(" MEDIAN %.2f", tot / 2.0);
             } else {
-                printf(" MEDIAN %d", tot / 2);
+                printf(" MEDIAN %.2f", tot / 2);
             }
 
 
